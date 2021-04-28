@@ -31,6 +31,5 @@ updater = Updater('Token for the HTTP API')
 updater.dispatcher.add_handler(CommandHandler('start', hello))
 updater.dispatcher.add_handler(MessageHandler(Filters.text, reply))
 
-
 updater.start_polling()
 updater.idle()
