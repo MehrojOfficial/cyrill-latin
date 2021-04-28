@@ -26,7 +26,7 @@ def hello(update: Update, context: CallbackContext) -> None:
     update.message.reply_text(f"Assalomu alaykum, {update.effective_user.first_name}")
 
 
-updater = Updater('1763522327:AAEySG3ilGrnyOVWmk23szF-c1Ad27O2zHA')
+updater = Updater('Token for the HTTP API')
 
 updater.dispatcher.add_handler(CommandHandler('start', hello))
 updater.dispatcher.add_handler(MessageHandler(Filters.text, reply))
