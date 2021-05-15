@@ -46,6 +46,7 @@ def status2(update: Update, context: CallbackContext):
     status = 'cyrill-latin'
     update.message.reply_text("Yo'nalish Kiril - Lotin qilib sozlandi.\n\nQayta sozlash: /help")
 
+<<<<<<< HEAD
 
 def help(update: Update, context: CallbackContext):
     if status == 'latin_cyrill':
@@ -66,6 +67,8 @@ def hello(update: Update, context: CallbackContext) -> None:
     answer += "\nBotdan foydalanishni boshlashdan avval uni sozlab oling: /help"
     update.message.reply_text(answer)
 
+=======
+>>>>>>> parent of cb772e9 (Update bot.py)
 updater = Updater('1763522327:AAEySG3ilGrnyOVWmk23szF-c1Ad27O2zHA')
 
 updater.dispatcher.add_handler(CommandHandler('start', hello))
