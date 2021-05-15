@@ -35,7 +35,7 @@ LATIN_TO_CYRILLIC = {
     'x': 'х', 'X': 'Х',
     'y': 'й', 'Y': 'Й',
     'z': 'з', 'Z': 'З',
-    'ʼ': 'ъ',  # TODO: case?
+    'ʼ': 'ъ',
 }
 LATIN_VOWELS = (
     'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U', 'o‘', 'O‘'
@@ -327,6 +327,7 @@ TS_WORDS = {
     'korrelya(ts)iya': 'корреляция',
     'korresponden(s)iya': 'корреспонденция',
     'korrup(s)iya': 'коррупция',
+    'korrup(s)iyadir': 'коррупциядир',
     'koeffi(ts)iyent': 'коэффициент',
     'krema(ts)iya': 'кремация',
     'kristalliza(ts)iya': 'кристаллизация',
@@ -1413,9 +1414,5 @@ if __name__ == "__main__":
     """cat input_in_lat.txt | python transliterate.py > output_in_cyr.txt"""
     for line in sys.stdin:
         sys.stdout.write(transliterate(line, 'cyrillic'))
-
-def check(text):
-    if text.isascii() == True:
-        return "cyrillic"
-    else:
-        return "latin"
+    
+# code from https://github.com/kodchi/uzbek-transliterator/blob/master/transliterate.py
