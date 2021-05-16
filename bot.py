@@ -1,7 +1,7 @@
 """
 </>
-Date: 04.27.2021
-Time: 6:00 PM
+Date: 05.15.2021
+Time: 3:00 PM
 Programmer: Mehroj Majidov
 Github: https://github.com/MehrojOfficial
 Title: "Cyrill - Latin Telegram Bot"
